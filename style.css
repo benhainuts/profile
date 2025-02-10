@@ -1,0 +1,78 @@
+body {
+  font-family : Roboto;
+  weight : bold;
+  background-color : rgb(215,230,230);
+  color : rgb(70,70,100);
+  font-size : 20px;
+  line-height : 30px;
+}
+
+h1, h2, h3 {
+  font-size : 25px;
+  color : rgb(50,50,100);
+  line-height : 45px;
+}
+
+a {
+  text-decoration: none;
+  color : rgba(110,5,110,0.6)
+}
+
+a:hover {
+  text-decoration: none;
+  color : rgba(110,5,110,1)
+}
+
+.container {
+  width : 60vw;
+  padding : 2em;
+  margin : 0 auto;
+  text-align: center;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 6px 6px 6px 1px rgba(50,50,50,0.1);
+  padding : 1em;
+  margin : 2em;
+}
+
+.gros_bouton {
+  background-color: rgba(110,5,110,0.6);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding : 10px;
+  display: inline-block;
+}
+
+.gros_bouton:hover {
+  background-color: rgba(110,5,110,1);
+  color: white;
+  transition: linear;
+}
+
+#profile_pic {
+  border-radius: 50%;
+}
+
+.unmarked {
+  list-style: none;
+  padding-left: 0;
+}
+
+.unmarked li {
+  display: inline;
+  font-size: 3em;
+}
+
+
+@media (max-width: 600px) or (max-height:600px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  #profile_pic {
+    width: 100px;
+  }
+  .container {
+    width: 99vw;
+  }
+}
